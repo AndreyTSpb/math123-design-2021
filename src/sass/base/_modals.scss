@@ -1,0 +1,21 @@
+.modal{
+    .modal-dialog{
+        .modal-content{
+            border: 3px solid $purple;
+            border-radius: 0.5rem;
+            background-color: rgb(243, 242, 219);
+            .modal-header{
+                border-bottom: none;
+            }
+            .btn-close{
+                border-radius: 100%;
+                border: 2px solid rgb(59, 59, 59);
+                padding: .3rem .3rem;
+                color: $purple;
+            }
+            .modal-footer{
+                border-top: none;
+            }
+        }
+    }
+}

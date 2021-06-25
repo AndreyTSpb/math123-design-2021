@@ -1,0 +1,163 @@
+.our-teacher{
+    min-height: 100vh;
+    padding-top: 35px;
+    @media only screen and (max-width: 787px){
+        background-color: $purple;
+        h2{
+            color: #FFFFFF !important;
+        }
+    }
+    .slick-dots{
+        margin-top: 60px;
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        li[class="slick-active"] button {
+            background: $green;
+        }
+        button {
+            background: #b41e8e; // цвет фона
+            border: none; // без рамки
+            border-radius: 50%; // радиус закругления
+            height: 15px; // высота точки
+            width: 15px; // ширина точки
+            margin: 5px; // отступы между точками
+            outline: none; // убираем обводку
+            color: rgba(#FFFFFF, 0);
+        }
+    }
+    &-item{
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        min-width: 300px;
+        max-height: 445px;
+        padding: 25px 15px 25px 15px;
+        @media only screen and (max-width: 787px){
+            height: 475px;
+        }
+        @media only screen and (max-width: 475px){
+            height: 495px;
+            min-width: 284px;
+        }
+        @media only screen and (max-width: 375px){
+            height: 510px;
+            min-width: 235px;
+            padding: 5px;
+        }
+        @media only screen and (max-width: 345px){
+            height: 520px;
+            min-width: 255px;
+        }
+        &-grid{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            @media only screen and (max-width: 787px){
+                justify-content: space-around;
+            }
+            align-content: stretch;
+            height: 100%;
+            padding: 5px;
+            img{
+                margin: 0 auto;
+                width: 222px;
+                height: 228px;
+                @media only screen and (max-width: 787px){
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+        }
+        &-name{
+            margin-top: 40px;
+            font-family: 'Roboto';
+            font-size: 34px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+            color: #58595b;
+            @media only screen and (max-width: 787px){
+                color: #ffffff;
+                font-size: 24px;
+                margin-top: 20px;
+            }
+        }
+        &-info{
+            font-family: Roboto;
+            font-size: 23px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+            color: #58595b;
+            @media only screen and (max-width: 787px){
+                color: #ffffff;
+                font-size: 18px;
+                margin-top: 20px;
+            }
+        }
+    }
+
+    //стрелка
+    .slick-arrow{
+        position: absolute;
+        top: 50%; // выравнивание по вертикали
+        margin: -15px 0 0 0; // корректировка  вертикального выравнивания
+        z-index: 2; // стрелки сверху картинок
+        font-size: 0; // убираем надпись на дефолтной стрелке
+        width: 30px; // ширина стрелки
+        height: 30px; // высота стрелки
+        &.slick-prev{
+            left: 100px; // левая стрелка остается с левой стороны слайдера
+            //position: relative;
+            border: 0;
+            background-color: rgba($green-two, 0);
+            //top: 50%;
+            //transform: translateY(-50%);
+            &:after{
+                content: '';
+                position: absolute; /* Абсолютное позиционирование */
+                border: 35px solid transparent; 
+                border-right: 45px solid $purple;
+                left: -50px;
+                top: -20px;
+                @media only screen and (max-width: 787px){
+                    border: 25px solid transparent; 
+                    border-right: 20px solid #FFFFFF;
+                    left: -90px;
+                    //top: -75px;
+                }
+            }
+        }
+        &.slick-next{
+            right: 100px; // правая стрелка переместилась справа от слайдера
+            border: 0;
+            background-color: rgba($green-two, 0);
+            //top: 50%;
+            //transform: translateY(-50%);
+            &:after{
+                content: '';
+                position: absolute; /* Абсолютное позиционирование */
+                border: 35px solid transparent; 
+                border-left: 45px solid $purple;
+                right: -50px;
+                top: -20px;
+                @media only screen and (max-width: 787px){
+                    border: 25px solid transparent; 
+                    border-left: 20px solid #FFFFFF;
+                    right: -90px;
+                    //top: -75px;
+                }
+            }
+        }
+    }
+    .slick-initialized .slick-slide{
+        display: block;
+    }
+}

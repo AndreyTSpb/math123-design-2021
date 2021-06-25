@@ -1,0 +1,85 @@
+.slider{
+    @media only screen and (max-width: 787px){
+        display: none;
+    }
+    &-background{
+        margin-top: 100px;
+        position: relative;
+        width: 100%;
+        //height: 600px;
+        //background-image: url('../../img/slide1.png');
+        //background-repeat: no-repeat;
+        //background-position: center;
+        //background-size: cover;
+        & .slick-prev, & .slick-next{
+            font-size: 0;
+            line-height: 0;
+            position: absolute;
+            top: 50%;
+            display: block;
+            width: 20px;
+            height: 20px;
+            padding: 0;
+            -webkit-transform: translate(0, -50%);
+            -ms-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+            cursor: pointer;
+            color: transparent;
+            border: none;
+            outline: none;
+            background: #ffffff; 
+            border-radius: 100%;
+            z-index: 2;
+            &:before {
+                font-family: 'slick';
+                font-size: 20px;
+                line-height: 1;
+                opacity: .75;
+                color: $purple;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+        }
+        & .slick-prev {
+            left: 25px;
+            &:before {
+                content: '←';
+            }
+        }
+
+        & .slick-next {
+            right: 25px;
+            &:before {
+                content: '→';
+            }
+        }
+        
+    }
+
+    &-note{
+        position: absolute;
+        padding-left: 150px;
+        padding-bottom: 50px;
+        left: 0;
+        bottom: 0;
+        p{
+            display: block;
+            width: 185px;
+            font-family: 'Panton';
+            font-size: 46px;
+            font-weight: 900;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+            text-transform: uppercase;
+            color: $purple;
+        }
+    }
+    &-hr{
+        width: 100%;
+        height: 25px;
+        background-image: linear-gradient(to top, #a5a5a5, #ffffff), linear-gradient(to bottom, #ffffff, #ffffff);
+    }
+}
