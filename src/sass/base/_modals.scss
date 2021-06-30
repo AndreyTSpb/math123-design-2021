@@ -18,4 +18,26 @@
             }
         }
     }
+    &.grey{
+        .modal-content{
+            border: none;
+            border-bottom: 15px $purple solid;
+            border-radius: 0.5rem;
+            box-shadow: 0.1px 1px 4.6px 1.4px rgba(0, 0, 0, 0.79);
+            background-color: #e6e7e8;
+            .modal-header{
+                border-bottom: none;
+            }
+            .btn-close{
+                border-radius: 100%;
+                border: 2px solid rgb(59, 59, 59);
+                padding: .3rem .3rem;
+                color: $purple;
+            }
+            .modal-footer{
+                border-top: none;
+            }
+
+        }
+    }
 }

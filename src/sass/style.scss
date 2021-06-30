@@ -12,6 +12,8 @@
 @import 'base/animations';
 @import 'base/bg-color';
 @import 'base/frames';
+@import 'base/pages';
+@import 'base/cards';
 
 *,
 *::before,
@@ -64,7 +66,9 @@ section:not(.slider){
         margin-top: 0;
     }
 }
-
+body{
+    cursor: url(../img/cursor.cur), url(../img/cursor.png), default;
+}
 .container{
     max-width: 1140px;
     margin: 0 auto;
@@ -93,3 +97,6 @@ section:not(.slider){
 @import 'blocks/aboutus';
 @import 'blocks/maps';
 @import 'blocks/video';
+
+//pages
+@import 'blocks/phyth';

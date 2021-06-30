@@ -77,6 +77,84 @@ document.addEventListener('DOMContentLoaded', function(){
             // instead of a settings object
           ]
     });
+    
+    //Слайдер для анонсов на второстипенных страницах
+    $('#page-anonse-old').slick({
+      infinite: true,
+      slidesToShow: 2,
+      slidesToScroll: 2,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            infinite: true
+          }
+        },
+        {
+          breakpoint: 787,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 567,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 321,
+          settings: {
+            centerPadding: '20px',
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    });
+
+    //Слайдер для анонсов на второстипенных страницах
+    $('#page-anonse').slick({
+      infinite: true,
+      slidesToShow: 2,
+      slidesToScroll: 2,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            infinite: true
+          }
+        },
+        {
+          breakpoint: 787,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 567,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 321,
+          settings: {
+            centerPadding: '20px',
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    });
 
     $('.our-teacher-wraper').slick({
         centerMode: true,

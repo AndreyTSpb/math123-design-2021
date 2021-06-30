@@ -1,0 +1,178 @@
+.phyth{
+    &-about{
+        &-text{
+            margin-top: 35px;
+            h4{
+                font-family: 'Panton';
+                font-size: 21px;
+                font-weight: bold;
+                color: #414042 !important;
+                text-transform: capitalize !important;
+            }
+            ul{
+                li{
+                    list-style-type: none; /* Прячем исходные маркеры */
+                    &:before {
+                        color: $green; /* Цвет маркера */
+                        content: '\2022'; /* Сам маркер */
+                        padding-right: 10px; /* Расстояние от маркера до текста */
+                        font-size: 22px;
+                    }
+
+                    font-family: 'Panton';
+                    font-size: 21px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.43;
+                    letter-spacing: normal;
+                    text-align: left;
+                    color: #414042;
+                }
+            }
+        }
+        &-footer{
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            @media only screen and (max-width: 680px) {
+                grid-template-columns: 1fr;
+                padding: 10px;
+            }
+            img{
+                width: 482px;
+                height: 344px;
+                @media only screen and (max-width: 787px) {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            &-text{
+                margin-top: 10px;
+                text-align: left;
+                ul{
+                    font-family: 'Panton';
+                    font-size: 23px;
+                    font-weight: 900;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.33;
+                    letter-spacing: 0.58px;
+                    color: $green;
+                    li{
+                        text-align: left;
+                    }
+                }
+                .small{
+                    display: block;
+                    font-size: 14px;
+                    text-align: left;
+                    color: $green;
+                }
+                .btn-sub{
+                    margin-top: 25px;
+                    display: block;
+                }
+            }
+        }
+    }
+    &-anons{
+        width: 100%;
+        min-height: 100vh;
+        background-color: #09afa2;
+        margin-top: 40px;
+        padding-bottom: 50px;
+        h2{
+            margin-top: 40px;
+        }
+        &-wrap{
+            margin: 0 auto;
+            margin-top: 40px;
+        }
+
+        .slick-arrow{
+            position: absolute;
+            top: 50%; // выравнивание по вертикали
+            margin: -15px 0 0 0; // корректировка  вертикального выравнивания
+            z-index: 2; // стрелки сверху картинок
+            font-size: 0; // убираем надпись на дефолтной стрелке
+            width: 30px; // ширина стрелки
+            height: 30px; // высота стрелки
+
+            &.slick-prev{
+                left: 100px; // левая стрелка остается с левой стороны слайдера
+                //position: relative;
+                border: 0;
+                background-color: rgba($green-two, 0);
+                //top: 50%;
+                //transform: translateY(-50%);
+                &:after{
+                    content: '';
+                    position: absolute; /* Абсолютное позиционирование */
+                    border: 35px solid transparent; 
+                    border-right: 45px solid #FFFFFF;
+                    right: 90px;
+                    top: -20px;
+                    @media only screen and (max-width: 787px){
+                        border: 25px solid transparent; 
+                        border-right: 20px solid #FFFFFF;
+                        left: -90px;
+                        //top: -75px;
+                    }
+                }
+            }
+
+            &.slick-next{
+                right: 100px; // правая стрелка переместилась справа от слайдера
+                border: 0;
+                background-color: rgba($green-two, 0);
+                //top: 50%;
+                //transform: translateY(-50%);
+                &:after{
+                    content: '';
+                    position: absolute; /* Абсолютное позиционирование */
+                    border: 35px solid transparent; 
+                    border-left: 45px solid #FFFFFF;
+                    left: 90px;
+                    top: -20px;
+                    @media only screen and (max-width: 787px){
+                        border: 25px solid transparent; 
+                        border-left: 20px solid #FFFFFF;
+                        right: -90px;
+                        //top: -75px;
+                    }
+                }
+            }
+        }
+    }
+    &-open, &-konkurs{
+        margin-top: 50px;
+        padding-left: 10px;
+        padding-right: 10px;
+        &-desc{
+            p{
+                margin-top: 20px;
+                font-family: 'Panton';
+                font-size: 18px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.43;
+                letter-spacing: normal;
+                text-align: center;
+                color: #414042;
+            }
+        }
+        &-wrap{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-basis: 500px;
+            flex-shrink: 0;
+            justify-content: space-evenly;
+            align-content:space-around;
+            margin-top: 40px;
+        }
+    }
+}

@@ -44,23 +44,37 @@
     color: $light-purple;
     text-transform: uppercase;
     border: solid 3px #b41e8e;
+    
     &:hover{
         background-color: #ffffff;
+        text-decoration: none;
     }
     &.math{
-        background-color: $yellow;
+        &:hover{
+            background-color: $yellow;
+            text-decoration: none;
+        }
     }
     &.phyth{
-        background-color: $green;
-        color: #FFFFFF;
+        &:hover{
+            background-color: $green;
+            color: #FFFFFF;
+            text-decoration: none;
+        }
     }
     &.prog{
-        background-color: $orang;
-        color: #FFFFFF;
+        &:hover{
+            background-color: $orang;
+            color: #FFFFFF;
+            text-decoration: none;
+        }
     }
     &.biznes{
-        background-color: $blue;
-        color: #FFFFFF;
+        &:hover{
+            background-color: $blue;
+            color: #FFFFFF;
+            text-decoration: none;
+        }
     }
 }
 .btn-sub{
@@ -84,5 +98,12 @@
     &.record{
         background-color: $yellow;
         color: $light-purple;
+    }
+    &.green{
+        background-color: $green;
+    }
+    &.white{
+        background-color: #ffffff;
+        color: $green;
     }
 }
