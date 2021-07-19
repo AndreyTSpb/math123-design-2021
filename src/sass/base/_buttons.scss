@@ -92,6 +92,10 @@
     font-style: normal;
     line-height: 1.1;
     letter-spacing: normal;
+    a{
+        text-decoration: none !important;
+
+    }
     &:hover{
         box-shadow: inset 0.6px 6px 4.9px 0.1px rgba(24, 23, 28, 0.39);
     }
@@ -105,5 +109,17 @@
     &.white{
         background-color: #ffffff;
         color: $green;
+    }
+    &.orang{
+        background-color: $orang;
+        color: #ffffff;
+    }
+    &.blue{
+        background-color: $blue;
+        color: $yellow;
+    }
+    &.purple{
+        background-color: $purple;
+        color: $yellow;
     }
 }

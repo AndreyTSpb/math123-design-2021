@@ -1,11 +1,14 @@
-.phyth{
+.biznes{
+    h2{
+        color: $blue !important;
+    }
     .card-base-connect-subject-mennager{
         h4{
-            color: $green-two !important;
+            color: $blue !important;
         }
     }
     .card-base-connect-subject-mennager>.btn-sub{
-        background-color: $green-two !important;
+        background-color: $blue !important;
         color:#FFFFFF;
     }
 
@@ -23,7 +26,7 @@
                 li{
                     list-style-type: none; /* Прячем исходные маркеры */
                     &:before {
-                        color: $green; /* Цвет маркера */
+                        color: $blue; /* Цвет маркера */
                         content: '\2022'; /* Сам маркер */
                         padding-right: 10px; /* Расстояние от маркера до текста */
                         font-size: 22px;
@@ -69,7 +72,7 @@
                     font-style: normal;
                     line-height: 1.33;
                     letter-spacing: 0.58px;
-                    color: $green;
+                    color: $blue;
                     li{
                         text-align: left;
                     }
@@ -78,7 +81,7 @@
                     display: block;
                     font-size: 14px;
                     text-align: left;
-                    color: $green;
+                    color: $blue;
                 }
                 .btn-sub{
                     margin-top: 25px;
@@ -90,7 +93,7 @@
     &-anons{
         width: 100%;
         min-height: 100vh;
-        background-color: #09afa2;
+        background-color: $blue;
         margin-top: 40px;
         padding-bottom: 50px;
         h2{
@@ -99,6 +102,14 @@
         &-wrap{
             margin: 0 auto;
             margin-top: 40px;
+            .card-base-anonce{
+                h4{
+                    color: $blue !important;
+                }
+                img{
+                    border: 4px solid $blue;
+                }
+            }
         }
 
         .slick-arrow{
@@ -114,7 +125,7 @@
                 left: 100px; // левая стрелка остается с левой стороны слайдера
                 //position: relative;
                 border: 0;
-                background-color: rgba($green-two, 0);
+                background-color: rgba($blue, 0);
                 //top: 50%;
                 //transform: translateY(-50%);
                 &:after{
@@ -136,7 +147,7 @@
             &.slick-next{
                 right: 100px; // правая стрелка переместилась справа от слайдера
                 border: 0;
-                background-color: rgba($green-two, 0);
+                background-color: rgba($blue, 0);
                 //top: 50%;
                 //transform: translateY(-50%);
                 &:after{
@@ -183,6 +194,11 @@
             justify-content: space-evenly;
             align-content:space-around;
             margin-top: 40px;
+            .card-base-type-groups{
+                h4{
+                    color: $blue !important;
+                }
+            }
         }
     }
 }

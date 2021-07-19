@@ -128,6 +128,7 @@
                 img{
                     border: solid 10px #00ab97;
                     border-radius: 5px;
+                    width: 380px;
                     @media only screen and (max-width: 787px){
                         width: 320px;
                         height: 180px;
@@ -137,6 +138,13 @@
                     margin-top: 30px;
                     margin-left: 10px;
                     margin-right: 10px;
+                    text-align: left !important;
+                    li{
+                        text-align: left !important;
+                        span{
+                            text-align: left !important;
+                        }
+                    }
                 }
             }
         }

@@ -25,3 +25,19 @@
         border-radius: 100%;
     }
 }
+.orange-frame{
+    width: 171px;
+    height: 170px;
+    border: solid 10px $orang-two;
+    &.radius{
+        border-radius: 100%;
+    }
+}
+.blue-frame{
+    width: 171px;
+    height: 170px;
+    border: solid 10px $blue;
+    &.radius{
+        border-radius: 100%;
+    }
+}
