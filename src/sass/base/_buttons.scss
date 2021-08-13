@@ -6,6 +6,9 @@
     border-radius: 10px;
     background-color: $light-purple;
     color: #FFFFFF;
+    a{
+        text-decoration: none;
+    }
 
     &:hover{
         cursor: pointer;
@@ -44,6 +47,9 @@
     color: $light-purple;
     text-transform: uppercase;
     border: solid 3px #b41e8e;
+    a{
+        text-decoration: none;
+    }
     
     &:hover{
         background-color: #ffffff;

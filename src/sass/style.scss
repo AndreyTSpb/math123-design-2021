@@ -81,6 +81,7 @@ body{
 
 @import 'blocks/header';
 @import 'blocks/main-menu';
+@import 'blocks/footer-menu';
 @import 'blocks/slider';
 @import 'blocks/slider-mobile';
 @import 'blocks/our-progress';
@@ -97,6 +98,7 @@ body{
 @import 'blocks/aboutus';
 @import 'blocks/maps';
 @import 'blocks/video';
+@import 'blocks/acordion';
 
 //pages
 @import 'blocks/phyth';
@@ -106,3 +108,6 @@ body{
 @import 'blocks/about-page';
 @import 'blocks/hall-glory-page';
 @import 'blocks/teachers-page';
+@import 'blocks/category-events';
+@import 'blocks/contacts';
+@import 'blocks/category-reference-section';

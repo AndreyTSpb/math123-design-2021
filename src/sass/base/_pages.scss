@@ -3,7 +3,18 @@
     p{
         text-align: left;
     }
+    p.has-text-align-center {
+        text-align: center;
+    }
+    
+    p.has-text-align-right {
+        text-align: right;
+    }
     li{
         text-align: left;
     }
+    &-desc{
+        margin-top: 50px;
+    }
+    
 }
