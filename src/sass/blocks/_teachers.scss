@@ -1,11 +1,16 @@
 .our-teacher{
-    min-height: 100vh;
-    padding-top: 35px;
+    //min-height: 100vh;
+    padding-top: 50px;
     @media only screen and (max-width: 787px){
         background-color: $purple;
         h2{
             color: #FFFFFF !important;
         }
+    }
+    &__button{
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
     }
     .slick-dots{
         margin-top: 60px;

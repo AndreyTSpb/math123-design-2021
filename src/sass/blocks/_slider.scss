@@ -55,7 +55,10 @@
         }
         
     }
-
+    &-item{
+        max-width: 1140px;
+        margin: 0 auto;
+    }
     &-note{
         position: absolute;
         padding-left: 150px;

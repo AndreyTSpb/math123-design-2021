@@ -1,11 +1,11 @@
-const gulp        = require('gulp');
-const browserSync = require('browser-sync');
-const sass        = require('gulp-sass');
-const cleanCSS = require('gulp-clean-css');
+const gulp         = require('gulp');
+const browserSync  = require('browser-sync');
+const sass         = require('gulp-sass');
+const cleanCSS     = require('gulp-clean-css');
 const autoprefixer = require('gulp-autoprefixer');
-const rename = require("gulp-rename");
-const imagemin = require('gulp-imagemin');
-const htmlmin = require('gulp-htmlmin');
+const rename       = require("gulp-rename");
+const imagemin     = require('gulp-imagemin');
+const htmlmin      = require('gulp-htmlmin');
 
 gulp.task('server', function() {
 
@@ -15,7 +15,7 @@ gulp.task('server', function() {
         }
     });
 
-    gulp.watch("src/*.html").on('change', browserSync.reload);
+    //gulp.watch("src/*.html").on('change', browserSync.reload);
 });
 
 gulp.task('styles', function() {
@@ -24,8 +24,8 @@ gulp.task('styles', function() {
         .pipe(rename({suffix: '.min', prefix: ''}))
         .pipe(autoprefixer())
         .pipe(cleanCSS({compatibility: 'ie8'}))
-        .pipe(gulp.dest("dist/css"))
-        .pipe(browserSync.stream());
+        .pipe(gulp.dest("dist/css"));
+        //.pipe(browserSync.stream());
 });
 
 gulp.task('watch', function() {
@@ -45,27 +45,27 @@ gulp.task('html', function () {
 
 gulp.task('scripts', function () {
     return gulp.src("src/js/**/*.js")
-        .pipe(gulp.dest("dist/js"))
-        .pipe(browserSync.stream());
+        .pipe(gulp.dest("dist/js"));
+        //.pipe(browserSync.stream());
 });
 
 gulp.task('fonts', function () {
     return gulp.src("src/fonts/**/*")
-        .pipe(gulp.dest("dist/fonts"))
-        .pipe(browserSync.stream());
+        .pipe(gulp.dest("dist/fonts"));
+        //.pipe(browserSync.stream());
 });
 
 gulp.task('icons', function () {
     return gulp.src("src/icons/**/*")
-        .pipe(gulp.dest("dist/icons"))
-        .pipe(browserSync.stream());
+        .pipe(gulp.dest("dist/icons"));
+        //.pipe(browserSync.stream());
 });
 
 gulp.task('images', function () {
     return gulp.src("src/img/**/*")
-        .pipe(imagemin())
-        .pipe(gulp.dest("dist/img"))
-        .pipe(browserSync.stream());
+        //.pipe(imagemin())
+        .pipe(gulp.dest("dist/img"));
+        //.pipe(browserSync.stream());
 });
 
 gulp.task('default', gulp.parallel('watch', 'server', 'styles', 'scripts', 'fonts', 'icons', 'html', 'images'));
