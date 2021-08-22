@@ -10,10 +10,10 @@ header{
     }
     //padding: 18px 570px 57px 374px;
     box-shadow: 0px 8px 16px 0 rgba(35, 31, 32, 0.27);
-    background-image: linear-gradient(to top, #d70a84, #970e76), linear-gradient(to bottom, #b41a83, #b41a83);
+    background-image: linear-gradient(to top, #d70a84, #b41a83);
     .header{
-        padding-top: 24px;
-        padding-bottom: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
         display: grid;
         grid-template-columns: 1fr 3fr 1fr;
         @media only screen and (max-width: 787px){
@@ -30,7 +30,7 @@ header{
         &-left{
             &-phone{
                 margin: 0 auto;
-                margin-top: 18px;
+                margin-top: 1px;
                 @media only screen and (max-width: 787px){
                     text-align: right;
                     margin: 1px;
@@ -77,6 +77,10 @@ header{
                 justify-content: space-between;
             }
             &-logo{
+                img{
+                    width: 150px;
+                    height: 150px;
+                }
                 @media only screen and (max-width: 787px){
                     margin-left: 25px;
                     img{
@@ -92,6 +96,8 @@ header{
         }
         
         &-center{
+            display: flex;
+            flex-direction: column;
             &-link{
                 a{
                     color: #ffffff;
@@ -109,21 +115,23 @@ header{
                 }
             }
             &-title{
-                margin: 6px 20px 18px 20px;
-                padding: 1px 25px;
+                margin: 6px 10px 5px 10px;
+                padding: 1px 5px;
                 font-family: 'Panton';
                 font-weight: 900;
-                font-size: 20px;;
+                font-size: 18px;;
                 text-align: center;
                 color: $yellow;
                 text-transform: uppercase;
                 span{
                     display: block;
+                    margin-top: 10px;
                     font-family: 'Malina';
                     font-weight: 900;
-                    font-size: 33.5px;
+                    font-size: 43px;
                     text-transform: uppercase;
                     line-height: 1;
+                    letter-spacing: 3px;
                     @media only screen and (max-width: 787px){
                         font-size: 18px;
                         display: inline;
@@ -136,11 +144,12 @@ header{
             }
             &-btn{
                 text-align: center;
-                padding: 20px;
+                padding: 0px 10px 10px;
+                margin-top: auto;
             }
         
             @media only screen and (max-width: 787px){
-                display: flex;
+                flex-direction: row;
                 justify-content: space-between;
 
                 &-title{
@@ -232,6 +241,7 @@ header{
                 background-color: $yellow;
                 border-radius: 100%;
                 padding-top: 25px;
+                box-shadow: 0.2px 2px 6px 0 rgba(0, 0, 0, 0.72);
                 h6{
                     font-family: 'Roboto';
                     font-size: 13px;
@@ -240,6 +250,7 @@ header{
                     a{
                         font-family: 'Roboto';
                         font-size: 9.5px;
+                        text-decoration: none;
                     }
                 }
                 .lock-icon, .user-icon{
@@ -265,6 +276,7 @@ header{
                     font-size: 10.5px;
                     margin: 0 auto;
                     padding: 5px 22px 5px 23px;
+                    box-shadow: 0.3px 3px 4.9px 0.1px rgba(24, 23, 28, 0.29);
                 }
             }
 

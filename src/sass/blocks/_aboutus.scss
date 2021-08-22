@@ -1,4 +1,6 @@
 .about-us{
+    margin-top: 5px;
+
     &-text{
         margin-top: 25px;
         font-family: 'Panton';
@@ -46,13 +48,17 @@
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
+        text-decoration: none;
+        &:hover{
+            background-image: url(../img/cyrcle-green.png);
+        }
         img{
             height: 57px;
         }
         p{
             padding-top: 10px;
             font-family: 'Panton';
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 700;
             font-stretch: normal;
             font-style: normal;
@@ -155,7 +161,7 @@
             border-radius: 49px;
             padding-left: 25px;
             padding-right: 25px;
-            background-color: #d1d3d4;
+            background-color: #d2d2d5;
             box-shadow: 0.4px 4px 10px 0 rgba(0, 0, 0, 0.53);
             display: flex;
             justify-content: space-between;

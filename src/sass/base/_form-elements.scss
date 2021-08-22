@@ -123,13 +123,13 @@ select{
 .select-pink{
     cursor: pointer;
     width: 257px;
-    height: 40px;
+    height: 44px;
     //margin: 0 10px 2px 0;
     //padding: 1px 0 0 38px;
-    border-radius: 20px;
+    border-radius: 22px;
     //box-shadow: inset 0px 6px 4.9px 0.1px rgba(24, 23, 28, 0.39);
     box-shadow: none;
-    border: solid 2px $purple;
+    border: solid 4px $purple;
     background-color: #ffffff;
     display: grid;
     grid-template-areas: "select";

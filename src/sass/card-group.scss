@@ -6,8 +6,11 @@
         border-radius: 20px;
         margin-bottom: 15px;
         overflow: hidden;
-        border: solid 6px #970e76;
-        background-color: rgba(255, 242, 0, 0.3);
+        border: none;
+        border-radius: 10px;
+        //box-shadow: 0.1px 1px 4.6px 1.4px rgba(0, 0, 0, 0.79);
+        background-color: rgba(230,231,232,0.9);
+        border-bottom: 11px solid #970e76;
 
         @media only screen and (max-width: 787px){
             align-self: center;
@@ -25,7 +28,7 @@
         }
 
         &:hover{
-            border: solid 6px #00b596;
+            box-shadow: 0.1px 1px 4.6px 1.4px rgba(0, 0, 0, 0.79);
         }
         &-wrapper{
             display: flex;
@@ -60,56 +63,58 @@
             display: flex;
             justify-content: space-around;
             align-items: center;
-            &-img{
-                width: 57px;
-                height: 46px;
-                background-image: url("../img/bg/monitor-sale.png");
+            &-klass{
+                width: 50%;
                 background-repeat: no-repeat;
                 background-position: center;
+
                 p{
-                    display: block;
-                    margin: 0 auto;
-                    margin-top: 10px;
+                    margin-bottom: 0;
                     font-family: "Panton";
-                    font-size: 36.5px;
+                    font-size: 32.5px;
                     font-weight: 900;
                     font-stretch: normal;
                     font-style: normal;
-                    line-height: 0.56;
-                    letter-spacing: 0.37px;
+                    line-height: 0.83;
+                    letter-spacing: 0.33px;
                     text-align: center;
-                    color: #00b596;
+                    color: #b80e80;
                 }
             }
-            &-text{
+            &-subject{
+                width: 50%;
+                margin-top: auto;
+                
                 p{ 
+                    margin-bottom: 0;
                     font-family: "Panton";
-                    font-size: 42px;
+                    font-size: 16px;
                     font-weight: 900;
                     font-stretch: normal;
                     font-style: normal;
-                    line-height: 0.54;
-                    letter-spacing: normal;
+                    line-height: 0.84;
+                    letter-spacing: 0.16px;
                     text-align: center;
-                    color: #970e76;
-                    margin-bottom: 0;
+                    color: #b80e80;
                 }
             }
         }
         &-location{
             width: 100%;
-            font-weight: normal;
-            font-stretch: normal;
-            font-style: normal;
-            line-height: 0.83;
-            letter-spacing: 0.24px;
             text-align: center;
-            margin-top: 13px;
+            background-color: #b80e80;
+            padding: 15px;
+            margin-top: 20px;
             a{ 
                 font-family: "Panton";
-                min-height: 21px;
-                font-size: 22px;
-                color: #970e76;
+                font-size: 21.5px;
+                font-weight: bold;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 0.84;
+                letter-spacing: 0.22px;
+                text-align: center;
+                color: #fff;
             }
             @media only screen and ( max-width:  425px){
                 width: 270px;
@@ -125,37 +130,46 @@
             background-color: #EEDDED;     
         }
         &-free-place{
-            margin-top: 8px;
-            padding: 6px;
-            border-top: 1px solid #dad7d6;
-            border-bottom: 1px solid #dad7d6;
-            
+            width: 233px;
+            height: 43px;
+            margin: 0 auto;
+            padding: 10px;
+            box-shadow: inset 0px 2px 5.9px 0.1px rgba(9, 12, 24, 0.29);
+            background-color: #b80e80;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+
             p{
-                font-size: 24px;
+                font-family: "Panton";
+                font-size: 20.5px;
                 font-weight: normal;
                 font-stretch: normal;
                 font-style: normal;
-                line-height: 0.83;
-                letter-spacing: 0.24px;
+                line-height: 1.1;
+                letter-spacing: 0.21px;
                 text-align: center;
-                margin: 0;
+                color: #ffed00;
+                margin-bottom: 10px;
             }
         }
         &-date{
             text-align: center;
+            padding-top: 25px;
             &-weak-day{
-                //font-family: "Panton";
-                font-size: 30px;
-                font-weight: normal;
+                padding-top: 10px;
+                font-size: 32.5px;
+                font-weight: bold;
                 font-stretch: normal;
                 font-style: normal;
-                letter-spacing: normal;
+                line-height: 0.83;
+                letter-spacing: 0.33px;
                 text-align: center;
-                //text-transform: capitalize;
-                color: #970e76;
+                text-transform: capitalize;
+                color: #000;
                 margin: 0;
             }
             &-month{
+                display: none;
                 font-size: 30px;
                 color: #970e76;
                 margin: 0;
@@ -186,51 +200,49 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            padding-left: 10px;
-            padding-right: 10px;
+            padding:15px 10px; 
+            width: 100%;
             &-fio{
-                button{
-                    font-size: 17px;
-                    font-weight: normal;
-                    font-stretch: normal;
-                    font-style: normal;
-                    line-height: 0.94;
-                    letter-spacing: normal;
-                    text-align: center;
-                    border: 2px solid #970e76;
-                    &:hover{
-                        border: 2px solid #ffffff;
-                    }
-                    @media only screen and ( max-width:  425px){
-                        min-width: 100px;
-                    }
-                    span{
-                        font-size: 17px;
-                        color: #970e76;
-                        text-transform: uppercase;
-                    }
-                }
-            }
-            &-img{
-                width: 124px;
-                height: 118px;
                 position: relative;
+                width: 290px;
+                height: 102px;
+                padding: 20px 10px 20px 50px;
+                margin-left: auto;
+                border-radius: 20px;
+                box-shadow: 0px 3px 4px 0 rgba(29, 29, 27, 0.63);
+                background-color: #fff;
+                font-family: "Panton";
+                font-size: 23px;
+                font-weight: bold;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1;
+                letter-spacing: 0.23px;
+                text-align: center;
+                color: #1e0003;
+
                 @media only screen and ( max-width:  425px){
-                    width: 90px;
-                    height: 87px;
-                    background-size: cover;
+                    min-width: 100px;
                 }
-    
+                span{
+                    font-size: 17px;
+                    color: #970e76;
+                    text-transform: uppercase;
+                }
+
                 img{
                     position: absolute;
-                    left: 50%;
-                    top: 5%;
-                    transform: translateX(-48%);
+                    top: -7px;
+                    left: 0;
+                    transform: translateX(-50%);
+                    background-color: #4d583d;
                     display: block;
-                    width: 105px;
-                    height: 105px;
+                    width: 116px;
+                    height: 116px;
                     border-radius: 100%;
-                    border: 3px solid #970e76;
+                    border: solid 7px #b80e80;
+                    box-shadow: 0px 3px 4px 0 rgba(29, 29, 27, 0.63);
+                    //border: 3px solid #970e76;
                     @media only screen and ( max-width:  425px){
                         width: 80px;
                         height: 80px;
@@ -247,19 +259,20 @@
         }
         &-adress-meropriatie{
             font-size: 40px;
-            margin-top: 5px;
+            margin-top: 20px;
             text-align: center;
             color: #970e76;
         }               
         &-price{
-            margin-top: 20px;
-            font-size: 24.5px;
-            font-weight: normal;
+            font-family: "Roboto";
+            font-size: 21px;
+            font-weight: 500;
             font-stretch: normal;
             font-style: normal;
-            line-height: 0.76;
-            letter-spacing: 0.25px;
+            line-height: 1.5;
+            letter-spacing: normal;
             text-align: center;
+            color: #b41e8e;
         }
         &-record{
             text-align: center;
@@ -267,7 +280,7 @@
         }
         &-more{
             text-align: center;
-            margin-top: 10px;
+            margin-top: auto;
             button{
                 color: #970e76;
                 border: none;
@@ -290,6 +303,7 @@
             padding-right: 20px;
             padding-left: 20px;
             h4 {
+                color: #b80e80 !important;
                 text-align: center;
             }
             ul{

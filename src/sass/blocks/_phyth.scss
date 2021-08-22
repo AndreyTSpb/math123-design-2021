@@ -2,6 +2,13 @@
     h1, h2, h3, h4, h5, h6{
         color: $green-two !important;
     }
+
+    .card-base-purple,.card-base-green,.card-base-orange,.card-base-blue{
+        h4{
+            color:#FFFFFF !important;
+        }
+    }
+
     .card-base-connect-subject-mennager{
         h4{
             color: $green-two !important;
@@ -56,6 +63,7 @@
             img{
                 width: 482px;
                 height: 344px;
+                justify-self: flex-end;
                 @media only screen and (max-width: 787px) {
                     width: 100%;
                     height: auto;
@@ -64,6 +72,8 @@
             &-text{
                 margin-top: 10px;
                 text-align: left;
+                padding-left: 15px;
+
                 ul{
                     font-family: 'Panton';
                     font-size: 23px;
@@ -73,11 +83,14 @@
                     line-height: 1.33;
                     letter-spacing: 0.58px;
                     color: $green;
+                    padding-left: 0;
+                    list-style-position: inside;
                     li{
                         text-align: left;
                     }
                 }
-                .small{
+                
+                p>span{
                     display: block;
                     font-size: 14px;
                     text-align: left;
@@ -86,6 +99,10 @@
                 .btn-sub{
                     margin-top: 25px;
                     display: block;
+                    text-decoration: none;
+                    &:hover{
+                        color: $yellow;
+                    }
                 }
             }
         }
@@ -103,7 +120,9 @@
             margin: 0 auto;
             margin-top: 40px;
         }
-
+        .slick-list{
+            overflow: visible;
+        }
         .slick-arrow{
             position: absolute;
             top: 50%; // выравнивание по вертикали

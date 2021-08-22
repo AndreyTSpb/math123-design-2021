@@ -1,6 +1,4 @@
 .our-teacher{
-    //min-height: 100vh;
-    padding-top: 50px;
     @media only screen and (max-width: 787px){
         background-color: $purple;
         h2{
@@ -36,7 +34,7 @@
         margin-right: 10px;
         margin-bottom: 10px;
         min-width: 300px;
-        max-height: 445px;
+        //max-height: 445px;
         padding: 25px 15px 25px 15px;
         @media only screen and (max-width: 787px){
             height: 475px;

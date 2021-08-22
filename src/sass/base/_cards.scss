@@ -9,6 +9,9 @@
         border-radius: 10px;
         box-shadow: 0.1px 1px 4.6px 1.4px rgba(0, 0, 0, 0.79);
         background-color: #e6e7e8;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         @media only screen and (max-width: 787px) {
             width: 80%;
             height: auto;
@@ -24,10 +27,10 @@
         }
         img{
             position: absolute;
-            width: 255px;
-            height: 255px;
+            width: 275px;
+            height: 275px;
             left: 0;
-            top: 0;
+            top: -12px;
             transform: translateX(-50%);
             background-color: #4d583d;
             @media only screen and (max-width: 567px) {
@@ -58,9 +61,10 @@
         }
         button{
             white-space: nowrap;
-            width: auto;
+            width: 260px;
             font-size: 15px;
-            padding: 8px 17px 8px 17px;
+            padding: 8px 8px 8px 8px;
+            margin: 0 auto;
         }
     }
     &-anonce{

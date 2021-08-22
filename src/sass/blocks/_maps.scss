@@ -1,9 +1,13 @@
 .maps{
     width: 100%;
+    margin-top: 0px !important;
     //min-height: 100vh;
     background-color: $ligth-yellow;
     padding-top: 50px;
     padding-bottom: 30px;
+    background-image: url('../img/bg-map.png');
+    background-position: right bottom;
+    background-repeat: no-repeat;
     &-place{
         max-width: 767px;
         height: 458px;

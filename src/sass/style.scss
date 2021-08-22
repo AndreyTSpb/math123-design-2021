@@ -1,5 +1,5 @@
 //@import 'libs/bootstrap-reboot.min';
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import 'libs/slick';
 //@import 'libs/slick-theme';
 @import 'libs/fonts';
@@ -61,7 +61,7 @@
 
 
 section:not(.slider){
-    margin-top: 65px;
+    margin-top: 45px;
     @media only screen and (max-width: 787px){
         margin-top: 0;
     }

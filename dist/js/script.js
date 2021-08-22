@@ -159,7 +159,7 @@ document.addEventListener('DOMContentLoaded', function(){
     $('.our-teacher-wraper').slick({
         centerMode: true,
         centerPadding: '60px',
-        slidesToShow: 3,
+        slidesToShow: 5,
         slidesToScroll: 1,
         autoplay: false,
         autoplaySpeed: 1000,
@@ -167,6 +167,15 @@ document.addEventListener('DOMContentLoaded', function(){
         dotsClass: 'slick-dots', // название класса для точек
         arrows: true,
         responsive: [
+          {
+            breakpoint: 1440,
+            settings: {
+              slidesToShow: 4,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: false
+            }
+          },
           {
             breakpoint: 1024,
             settings: {

@@ -2,6 +2,11 @@
     h1, h2, h3, h4, h5, h6{
         color: $purple !important;
     }
+    .card-base-purple,.card-base-green,.card-base-orange,.card-base-blue{
+        h4{
+            color:#FFFFFF !important;
+        }
+    }
     .card-base-connect-subject-mennager{
         h4{
             color: $purple !important;
@@ -10,6 +15,9 @@
     .card-base-connect-subject-mennager>.btn-sub{
         background-color: $purple !important;
         color:#FFFFFF;
+    }
+    .card-base-type-groups-klass{
+        color: $green;
     }
 
     &-about{
@@ -56,6 +64,7 @@
             img{
                 width: 482px;
                 height: 344px;
+                justify-self: flex-end;
                 @media only screen and (max-width: 787px) {
                     width: 100%;
                     height: auto;
@@ -73,11 +82,13 @@
                     line-height: 1.33;
                     letter-spacing: 0.58px;
                     color: $purple;
+                    padding-left: 0;
+                    list-style-position: inside;
                     li{
                         text-align: left;
                     }
                 }
-                .small{
+                p>span{
                     display: block;
                     font-size: 14px;
                     text-align: left;
@@ -86,6 +97,10 @@
                 .btn-sub{
                     margin-top: 25px;
                     display: block;
+                    text-decoration: none;
+                    &:hover{
+                        color: $yellow;
+                    }
                 }
             }
         }
@@ -96,6 +111,9 @@
         background-color: $purple;
         margin-top: 40px;
         padding-bottom: 50px;
+        .slick-list{
+            overflow: visible;
+        }
         h2{
             margin-top: 40px;
             color: #FFFFFF !important;
