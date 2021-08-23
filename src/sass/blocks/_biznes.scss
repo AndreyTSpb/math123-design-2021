@@ -129,60 +129,7 @@
             }
         }
 
-        .slick-arrow{
-            position: absolute;
-            top: 50%; // выравнивание по вертикали
-            margin: -15px 0 0 0; // корректировка  вертикального выравнивания
-            z-index: 2; // стрелки сверху картинок
-            font-size: 0; // убираем надпись на дефолтной стрелке
-            width: 30px; // ширина стрелки
-            height: 30px; // высота стрелки
-
-            &.slick-prev{
-                left: 100px; // левая стрелка остается с левой стороны слайдера
-                //position: relative;
-                border: 0;
-                background-color: rgba($blue, 0);
-                //top: 50%;
-                //transform: translateY(-50%);
-                &:after{
-                    content: '';
-                    position: absolute; /* Абсолютное позиционирование */
-                    border: 35px solid transparent; 
-                    border-right: 45px solid #FFFFFF;
-                    right: 90px;
-                    top: -20px;
-                    @media only screen and (max-width: 787px){
-                        border: 25px solid transparent; 
-                        border-right: 20px solid #FFFFFF;
-                        left: -90px;
-                        //top: -75px;
-                    }
-                }
-            }
-
-            &.slick-next{
-                right: 100px; // правая стрелка переместилась справа от слайдера
-                border: 0;
-                background-color: rgba($blue, 0);
-                //top: 50%;
-                //transform: translateY(-50%);
-                &:after{
-                    content: '';
-                    position: absolute; /* Абсолютное позиционирование */
-                    border: 35px solid transparent; 
-                    border-left: 45px solid #FFFFFF;
-                    left: 90px;
-                    top: -20px;
-                    @media only screen and (max-width: 787px){
-                        border: 25px solid transparent; 
-                        border-left: 20px solid #FFFFFF;
-                        right: -90px;
-                        //top: -75px;
-                    }
-                }
-            }
-        }
+   
     }
     &-open, &-konkurs{
         margin-top: 50px;
