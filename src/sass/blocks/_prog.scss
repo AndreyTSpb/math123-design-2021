@@ -99,9 +99,11 @@
                     color: $orang-two;
                 }
                 .btn-sub{
+                    margin: 0 auto;
                     margin-top: 25px;
                     display: block;
                     text-decoration: none;
+                    width: 200px;
                     &:hover{
                         color: $yellow;
                     }
@@ -167,6 +169,13 @@
                 h4{
                     color: $orang-two !important;
                 }
+            }
+        }
+    }
+    &-open{
+        .card-base-type-groups{
+            .btn-sub{
+                background-color: $orang;
             }
         }
     }

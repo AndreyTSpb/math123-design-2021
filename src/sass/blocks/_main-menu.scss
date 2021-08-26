@@ -83,9 +83,20 @@
             letter-spacing: normal;
             text-align: left;
             position: relative;
+            &:not(:first-child):before{
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 1px;
+                height: 1px;
+                background-color: $yellow;
+                border-radius: 100%;
+            }
 
             @media only screen and (max-width: 787px){
-                margin-bottom: 25px;
+                margin-bottom: 20px;
             }
 
             a{
