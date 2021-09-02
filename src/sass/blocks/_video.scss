@@ -11,19 +11,19 @@
     }
     &-item{
         width: 768px;
-        height: 458px;
+        //height: 458px;
         margin: 0 auto;
         border-radius: 10px;
         iframe{
             width: 742px; 
-            height: 432px;
+            //height: 432px;
         }
         @media only screen and (max-width: 769px){
             width: 100%;
             height: auto;
             iframe{
                 width: 100%;
-                height: auto;
+                //height: auto;
             }
         }
     }

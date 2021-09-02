@@ -17,8 +17,7 @@ document.addEventListener('DOMContentLoaded', function(){
         dots: false,
         infinite: true,
         speed: 300,
-        slidesToShow: 1,
-        adaptiveHeight: true
+        slidesToShow: 1
     });
     /**
      * Слайдер для видео
@@ -27,8 +26,7 @@ document.addEventListener('DOMContentLoaded', function(){
       dots: true,
       infinite: true,
       speed: 300,
-      slidesToShow: 1,
-      adaptiveHeight: true
+      slidesToShow: 1
   });
 
     //Слайдер для достижений
@@ -195,6 +193,7 @@ document.addEventListener('DOMContentLoaded', function(){
           {
             breakpoint: 480,
             settings: {
+              centerPadding: '20px',
               slidesToShow: 1,
               slidesToScroll: 1
             }

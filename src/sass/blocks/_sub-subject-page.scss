@@ -1,6 +1,5 @@
 .sub-subject-page{
     padding-bottom: 30px;
-
     &__card-price{
         display: flex;
         justify-content: space-between;
@@ -12,6 +11,13 @@
         margin: 0 auto;
         overflow: hidden;
         margin-top: 30px;
+        @media only screen and (max-width: 769px){
+            height: auto;
+        }
+        @media only screen and (max-width: 600px){
+            flex-direction: column;
+            width: 100%;
+        }
         .block-price{
             display: flex;
             flex-direction: column;
@@ -22,6 +28,12 @@
             padding: 10px 30px;
             border: solid 1px #dadada;
             background-color: #e3e3e3;
+            @media only screen and (max-width: 769px){
+                height: auto;
+            }
+            @media only screen and (max-width: 600px){
+                width: 100%;
+            }
             &__desc{
                 font-family: "Panton";
                 font-size: 16px;
@@ -134,9 +146,18 @@
                     height: 280px;
                     box-shadow: 0 0 0 12px #b80e80, 0 0 0 3px #fff;
                     border-radius: 10px;
+                    @media only screen and (max-width: 425px){
+                        display: block;
+                        margin: 0 auto;
+                        width: 300px;
+                        height: 240px;
+                    }
                 }
         }
         .wp-block-table{
+            @media only screen and (max-width: 425px){
+                        display: none;
+            }
             table{
                 width: 100%;
                 border-radius: 30px;
@@ -158,6 +179,9 @@
                     letter-spacing: normal;
                     text-align: center;
                     color: #010101;
+                    @media only screen and (max-width: 768px){
+                        font-size: 28px;
+                    }
                 }
                 td:first-child{
                     position: relative;
@@ -170,18 +194,9 @@
                     letter-spacing: normal;
                     text-align: center;
                     color: #b80e80;
-                    //border-left: 2px solid #b80e80;
-                    // &::before{
-                    //     content: '';
-                    //     display: block;
-                    //     position: absolute;
-                    //     width: 1px;
-                    //     height: 100%;
-                    //     background-color: #b80e80;
-                    //     top: 50%;
-                    //     left: 0;
-                    //     transform: translateY(-50%);
-                    // }
+                    @media only screen and (max-width: 768px){
+                        font-size: 25px;
+                    }
                 }
                 td:not(:first-child){
                     position: relative;
@@ -226,6 +241,9 @@
                     letter-spacing: 0.74px;
                     text-align: center;
                     color: #fff;
+                    @media only screen and (max-width: 768px){
+                        font-size: 22px;
+                    }
                     &:first-child{
                         border-left: none;
                         border-top-left-radius: 20px;
