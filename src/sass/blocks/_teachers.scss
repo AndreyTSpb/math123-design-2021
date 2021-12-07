@@ -8,7 +8,7 @@
     &__button{
         display: block;
         margin: 0 auto;
-        margin-top: 20px;
+        margin-top: auto;
     }
     .slick-dots{
         margin-top: 60px;
@@ -55,7 +55,7 @@
         &-grid{
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            justify-content: flex-start;
             @media only screen and (max-width: 787px){
                 justify-content: space-around;
             }
@@ -90,7 +90,7 @@
             }
         }
         &-info{
-            font-family: Roboto;
+            font-family: 'Roboto';
             font-size: 23px;
             font-weight: normal;
             font-stretch: normal;
@@ -100,6 +100,7 @@
             text-align: center;
             color: #58595b;
             margin-top: 15px;
+            padding-top: 20px;
             @media only screen and (max-width: 787px){
                 color: #ffffff;
                 font-size: 18px;

@@ -154,7 +154,7 @@
                     }
                 }
         }
-        .wp-block-table{
+        .table-subject,.wp-block-table{
             @media only screen and (max-width: 425px){
                         display: none;
             }
@@ -485,3 +485,4 @@
         }
     }
 }
+/*Показывать блок в зависимости от предмета*/

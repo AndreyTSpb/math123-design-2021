@@ -27,5 +27,15 @@
             }
         }
     }
+    &__one_item{
 
+        iframe{
+            width: 742px; 
+            height: 432px;
+        }
+        border: solid 13px $purple;
+        &.radius{
+            border-radius: 100%;
+        }
+    }
 }

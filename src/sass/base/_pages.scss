@@ -51,6 +51,16 @@
                 //border: solid 8px #9d0a6d;
             }
         }
+        .table-no-border{
+            thead{
+                th{
+                    color: #b80e80;
+                    font-size: 28px;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                }
+            }
+        }
     }
     
 }

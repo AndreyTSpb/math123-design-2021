@@ -79,6 +79,13 @@ body{
     }
 }
 
+.display-none{
+    display: none;
+}
+.show-block{
+    display: block;
+}
+
 @import 'blocks/header';
 @import 'blocks/main-menu';
 @import 'blocks/footer-menu';

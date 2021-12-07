@@ -75,15 +75,19 @@
     }
     &-note{
         position: absolute;
-        padding-left: 150px;
-        padding-bottom: 50px;
-        left: 0;
-        bottom: 0;
+        //padding-left: 150px;
+        //padding-bottom: 50px;
+        left: 15%;
+        bottom: 15%;
+        @media only screen and (max-width: 1440px){
+            left: 10%;
+            bottom: 10%;
+        }
         p{
             display: block;
-            width: 185px;
+            width: 200px;
             font-family: 'Panton';
-            font-size: 46px;
+            font-size: 56px;
             font-weight: 900;
             font-stretch: normal;
             font-style: normal;
@@ -92,6 +96,9 @@
             text-align: center;
             text-transform: uppercase;
             color: $purple;
+            @media only screen and (max-width: 1440px){
+                font-size: 46px;
+            }
         }
     }
     &-hr{
